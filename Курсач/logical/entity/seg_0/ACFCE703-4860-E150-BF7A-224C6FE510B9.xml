@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ACFCE703-4860-E150-BF7A-224C6FE510B9" name="Типы номеров">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 12:55:53 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID номера" id="ACC05326-AC48-2451-8390-C9ECF5B93BE6">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 14:56:08 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Уровень комфорта номера" id="222C9D6B-D85B-E605-95F4-F765BCCA9570">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 14:56:19 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Макс. кол-во постояльцев в номере" id="DF94CC3B-1976-1952-59A3-3A86BD768092">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 14:56:43 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Статус" id="5449DFEA-CA0C-5D65-1CC4-1C2E208C2389">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 14:56:59 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Цена за ночь" id="42C251AD-B904-39A6-1D14-CA7B4A688B03">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 14:57:14 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A998D4E6-E04B-81C6-3EA7-BEDB09A67B64" name="Номера PK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 14:56:18 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>ACC05326-AC48-2451-8390-C9ECF5B93BE6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

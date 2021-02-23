@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7699125F-9034-E524-7D44-6B8748F2B566" name="Клиенты">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 12:54:21 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID клиента" id="1A654300-E99A-2D99-A4BA-C272C73AE09F">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:22:30 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ФИО" id="F429C8EF-E329-65F2-D589-2A3AE64E527B">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:22:45 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Дата рождения" id="64ECC863-32B8-23A2-E2AB-702F1C8B2FC1">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:22:50 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Паспортные данные" id="5F638059-E620-D3B8-BC53-84687977223C">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:22:57 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Почта" id="FEC1FB0C-98EA-381B-4A81-3D674444C9F6">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 14:39:44 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Телефон" id="42CEC7E2-BD73-5E04-82EE-FAD994D5272B">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:23:03 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Скидка" id="8A22D68B-840E-E82F-1CAC-3F62B94B426F">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:23:12 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Заказчик" id="69DC5414-44C8-61AB-8FFC-9107AA74E82C">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-27 13:03:51 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="726E34C4-6ADE-D9E9-9D55-547EC5A33347" name="Клиент PK">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:25:27 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1A654300-E99A-2D99-A4BA-C272C73AE09F</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="1183F6B0-0162-C060-7EF3-1648DEEC7076" name="Паспортные данные клиента">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 14:25:43 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="false"/>
+</engineerTo>
+<newElementsIDs>5F638059-E620-D3B8-BC53-84687977223C</newElementsIDs>
+<usedAttributes>
+<attributeRef>5F638059-E620-D3B8-BC53-84687977223C</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="EE8380A8-882A-6F02-1EE2-570B504E8FB5" name="Почта клиента">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 14:40:06 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="false"/>
+</engineerTo>
+<newElementsIDs>FEC1FB0C-98EA-381B-4A81-3D674444C9F6</newElementsIDs>
+<usedAttributes>
+<attributeRef>FEC1FB0C-98EA-381B-4A81-3D674444C9F6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

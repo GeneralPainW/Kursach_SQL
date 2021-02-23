@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="65536EA9-F0F8-2914-5966-7100420994AE" name="Номер-гостиница">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Гостиницы_ID_гостиницы" id="DCA73193-94A8-CD16-5E3E-82A95CD3B4EC">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B82D945B-A865-A341-9BF6-67B4EE18A2AD" referredColumn="B99DB937-ED53-5801-02B3-CE1246FA5CA5"/>
+</associations>
+</Column>
+<Column name="Номера_ID_номера" id="9D6FD973-C000-AAA5-404D-023F2EC2DA8A">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D9A3BCA8-BF47-8DA3-7C22-CD7651F86300" referredColumn="3F6C67DC-DDE5-7403-B586-7B8A66948F3C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7AC82E6B-1E25-DCD2-9EC7-E5EE225126B8" name="Номер-гостиница_PK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCA73193-94A8-CD16-5E3E-82A95CD3B4EC"/>
+<colUsage columnID="9D6FD973-C000-AAA5-404D-023F2EC2DA8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C3F840D-6EBE-D4D6-3390-C7D8D449951C" name="Номер-гостиница_Гостиницы_FK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>BC2AC726-6463-D9D4-DDFE-E5ABB22260B2</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCA73193-94A8-CD16-5E3E-82A95CD3B4EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5EFE9919-B614-3F82-9179-D9F85864F34B" name="Номер-гостиница_Номера_FK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>BC2AC726-6463-D9D4-DDFE-E5ABB22260B2</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D6FD973-C000-AAA5-404D-023F2EC2DA8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

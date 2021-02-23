@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Договор-агент" directorySegmentName="seg_0" id="CAC0DBC3-4EA4-7EAE-C2D2-52586FF2773F">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:43:04 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<sourcePk>85A82168-AEBF-F17B-17A3-A88A258F2A98</sourcePk>
+<targetPk>195AC350-A12D-7E6C-EECE-CBEF5B350539</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8B48AE12-03AF-7938-5D10-6D99B550DCF3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6CC89FD8-DA53-D712-C3D2-FD0881534E8D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

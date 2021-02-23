@@ -1,0 +1,279 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+-- -----------------------------------------------------
+-- Schema kursach
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema kursach
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `kursach` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
+USE `kursach` ;
+
+-- -----------------------------------------------------
+-- Table `kursach`.`INSURANCE POLICIES`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kursach`.`INSURANCE POLICIES` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Description` VARCHAR(1000) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `kursach`.`TOUR OPERATORS`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kursach`.`TOUR OPERATORS` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Website` VARCHAR(1000) NOT NULL,
+  `Phone number` VARCHAR(50) NOT NULL,
+  `E-mail` VARCHAR(100) NOT NULL,
+  `Address` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `kursach`.`AGENCY`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kursach`.`AGENCY` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Full name` VARCHAR(150) NOT NULL,
+  `Birthday` DATE NOT NULL,
+  `Passport details` VARCHAR(200) NOT NULL,
+  `Phone number` VARCHAR(45) NOT NULL,
+  `Comission` INT NOT NULL,
+  `Hire date` DATE NOT NULL,
+  `Dismissal date` DATE NULL,
+  `Tour operator id` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `Passport details_UNIQUE` (`Passport details` ASC) VISIBLE,
+  INDEX `A_Tour_operator_ID_FK_idx` (`Tour operator id` ASC) VISIBLE,
+  CONSTRAINT `A_Tour_operator_ID_FK`
+    FOREIGN KEY (`Tour operator id`)
+    REFERENCES `kursach`.`TOUR OPERATORS` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `kursach`.`CONTRACTS`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kursach`.`CONTRACTS` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Departure date` DATE NOT NULL,
+  `Arrival date` DATE NOT NULL,
+  `Insurance id` INT NOT NULL,
+  `Agent id` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `C_Insurace_ID_FK_idx` (`Insurance id` ASC) VISIBLE,
+  INDEX `C_Agent_ID_FK_idx` (`Agent id` ASC) VISIBLE,
+  CONSTRAINT `C_Insurace_ID_FK`
+    FOREIGN KEY (`Insurance id`)
+    REFERENCES `kursach`.`INSURANCE POLICIES` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `C_Agent_ID_FK`
+    FOREIGN KEY (`Agent id`)
+    REFERENCES `kursach`.`AGENCY` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `kursach`.`CLIENTS`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kursach`.`CLIENTS` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Full name` VARCHAR(150) NOT NULL,
+  `Birthday` DATE NOT NULL,
+  `Passport details` VARCHAR(200) NOT NULL,
+  `E-mail` VARCHAR(100) NOT NULL,
+  `Phone number` VARCHAR(45) NOT NULL,
+  `Discount` INT NULL,
+  `Customer` VARCHAR(1) NULL,
+  `Personal agent id` INT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `Passport details_UNIQUE` (`Passport details` ASC) VISIBLE,
+  UNIQUE INDEX `E-mail_UNIQUE` (`E-mail` ASC) VISIBLE,
+  INDEX `C_Personal_agent_ID_FK_idx` (`Personal agent id` ASC) VISIBLE,
+  CONSTRAINT `C_Personal_agent_ID_FK`
+    FOREIGN KEY (`Personal agent id`)
+    REFERENCES `kursach`.`AGENCY` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `kursach`.`DIRECTIONS`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kursach`.`DIRECTIONS` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Destination name` VARCHAR(120) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `idDIRECTIONS_UNIQUE` (`id` ASC) VISIBLE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `kursach`.`SERVICES`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kursach`.`SERVICES` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Title` VARCHAR(200) NOT NULL,
+  `Price` DOUBLE NOT NULL,
+  `Description` VARCHAR(1000) NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `Service name_UNIQUE` (`Title` ASC) VISIBLE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `kursach`.`HOTELS`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kursach`.`HOTELS` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Hotel name` VARCHAR(120) NOT NULL,
+  `Hotel rating` VARCHAR(45) NOT NULL,
+  `Number of available rooms` INT NOT NULL,
+  `Direction` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE,
+  UNIQUE INDEX `Hotel name_UNIQUE` (`Hotel name` ASC) VISIBLE,
+  INDEX `Direction_ID_FK_idx` (`Direction` ASC) VISIBLE,
+  CONSTRAINT `Direction_ID_FK`
+    FOREIGN KEY (`Direction`)
+    REFERENCES `kursach`.`DIRECTIONS` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `kursach`.`ROOM TYPES`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kursach`.`ROOM TYPES` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Comfort level` VARCHAR(120) NOT NULL,
+  `Max number of guests` INT NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `kursach`.`PAYMENTS`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kursach`.`PAYMENTS` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Status` VARCHAR(45) NOT NULL,
+  `Contract id` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `P_Contract_ID_FK_idx` (`Contract id` ASC) VISIBLE,
+  CONSTRAINT `P_Contract_ID_FK`
+    FOREIGN KEY (`Contract id`)
+    REFERENCES `kursach`.`CONTRACTS` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `kursach`.`TOUR OPERATORS - HOTELS`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kursach`.`TOUR OPERATORS - HOTELS` (
+  `Tour operator id` INT NOT NULL,
+  `Hotel id` INT NOT NULL,
+  PRIMARY KEY (`Tour operator id`, `Hotel id`),
+  INDEX `Hotel - tour_ID_FK_idx` (`Hotel id` ASC) VISIBLE,
+  CONSTRAINT `Hotel_(tour_operator)_ID_FK`
+    FOREIGN KEY (`Hotel id`)
+    REFERENCES `kursach`.`HOTELS` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `Tour_operator_ID_FK`
+    FOREIGN KEY (`Tour operator id`)
+    REFERENCES `kursach`.`TOUR OPERATORS` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `kursach`.`HOTELS - ROOM TYPES`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kursach`.`HOTELS - ROOM TYPES` (
+  `Hotel id` INT NOT NULL,
+  `Room type id` INT NOT NULL,
+  `Status` VARCHAR(45) NOT NULL,
+  `Price per night` DOUBLE NOT NULL,
+  PRIMARY KEY (`Hotel id`, `Room type id`),
+  INDEX `Room_type_ID_FK_idx` (`Room type id` ASC) VISIBLE,
+  CONSTRAINT `Hotel_ID_FK`
+    FOREIGN KEY (`Hotel id`)
+    REFERENCES `kursach`.`HOTELS` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE NO ACTION,
+  CONSTRAINT `Room_type_ID_FK`
+    FOREIGN KEY (`Room type id`)
+    REFERENCES `kursach`.`ROOM TYPES` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `kursach`.`CONTRACTS - SERVICES`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kursach`.`CONTRACTS - SERVICES` (
+  `Contract id` INT NOT NULL,
+  `Services id` INT NOT NULL,
+  PRIMARY KEY (`Contract id`, `Services id`),
+  INDEX `CS_Services_ID_FK_idx` (`Services id` ASC) VISIBLE,
+  CONSTRAINT `CS_Contract_ID_FK`
+    FOREIGN KEY (`Contract id`)
+    REFERENCES `kursach`.`CONTRACTS` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE NO ACTION,
+  CONSTRAINT `CS_Services_ID_FK`
+    FOREIGN KEY (`Services id`)
+    REFERENCES `kursach`.`SERVICES` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `kursach`.`CONTRACRS - CLIENTS`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `kursach`.`CONTRACRS - CLIENTS` (
+  `Contract id` INT NOT NULL,
+  `Client id` INT NOT NULL,
+  PRIMARY KEY (`Contract id`, `Client id`),
+  INDEX `CC_Client_ID_FK_idx` (`Client id` ASC) VISIBLE,
+  CONSTRAINT `CC_Contract_ID_FK`
+    FOREIGN KEY (`Contract id`)
+    REFERENCES `kursach`.`CONTRACTS` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `CC_Client_ID_FK`
+    FOREIGN KEY (`Client id`)
+    REFERENCES `kursach`.`CLIENTS` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+

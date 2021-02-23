@@ -1,0 +1,177 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8B48AE12-03AF-7938-5D10-6D99B550DCF3" name="Агенства">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 12:55:14 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID агента" id="54968F29-F1CD-2A13-5661-87EA52F89B0A">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:11:31 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ФИО агента" id="6A4ED8DA-B870-BBFE-BDBE-4716080B2F41">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:11:41 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Дата рождения" id="6D4A9A89-21D0-74BA-E760-29CA22AEDE6D">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:11:46 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Паспортные данные" id="3F886BE5-B7A2-2E73-0691-CE7C330459DB">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:11:51 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Телефон" id="F1C07216-D186-BE53-15FE-82E55CCCBDE9">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:12:03 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="% комисси со сделки" id="BD865BAA-5A2C-835F-DA6F-287C562D4C79">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:12:08 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Дата найма" id="BA6893F9-9FCC-F8DA-CA57-E971FFF67E72">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:12:35 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Дата увольнения" id="28189D0D-B634-871E-B177-6191DF728BFD">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:12:42 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID услуги" id="A2F52AD8-BC21-397C-5675-98FC8325AE28">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 15:21:56 UTC</createdTime>
+<generatorID>DE5DC2AF-E620-D96E-9B8F-72D5C14D4443</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>127C7250-784A-30BF-F738-AB40B118C7FA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID туроператора" id="0939320C-7929-DA90-3BAB-A9154195DB6D">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 15:52:52 UTC</createdTime>
+<generatorID>15E1D8F0-9455-F30C-EBEA-6ED83705C9C2</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<referedAttribute>B7C2481D-82F6-35E7-F861-F76201DCA6B6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="85A82168-AEBF-F17B-17A3-A88A258F2A98" name="Агенства PK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 14:35:28 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>54968F29-F1CD-2A13-5661-87EA52F89B0A</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="40637FF6-5CA8-8789-FF5D-2824004B714F" name="Паспортные данные агента">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 14:35:34 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="false"/>
+</engineerTo>
+<newElementsIDs>3F886BE5-B7A2-2E73-0691-CE7C330459DB</newElementsIDs>
+<usedAttributes>
+<attributeRef>3F886BE5-B7A2-2E73-0691-CE7C330459DB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

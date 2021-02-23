@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Туроператор-агент" directorySegmentName="seg_0" id="15E1D8F0-9455-F30C-EBEA-6ED83705C9C2">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 15:52:52 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<sourcePk>B90E4C06-D123-B2D7-7A2F-55E996C54DF8</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>92CE616A-BC9F-134D-533E-374963151872</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8B48AE12-03AF-7938-5D10-6D99B550DCF3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

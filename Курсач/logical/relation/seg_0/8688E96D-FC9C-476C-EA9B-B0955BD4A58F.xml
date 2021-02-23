@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Гостиница-направление" directorySegmentName="seg_0" id="8688E96D-FC9C-476C-EA9B-B0955BD4A58F">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 15:28:45 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<sourcePk>5361738D-705D-3697-A8F9-C6ABE683C779</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>34D7F3C3-80B9-662A-D3A0-B10ECA4E0A4E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E34BF76A-4377-7AE1-F8C6-19C1890CA1FF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

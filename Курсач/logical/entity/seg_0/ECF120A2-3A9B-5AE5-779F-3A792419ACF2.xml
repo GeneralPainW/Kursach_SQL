@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ECF120A2-3A9B-5AE5-779F-3A792419ACF2" name="Услуги">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 12:56:09 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID услуги" id="127C7250-784A-30BF-F738-AB40B118C7FA">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:10:22 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Название услуги" id="7A1B7FA2-7FD4-D9FC-CD54-78BFFEF8C3BD">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:10:29 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Цена услуги" id="155086AD-A7C5-7BFC-54EA-CA24A9881974">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:10:41 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Описание услуги" id="06A1BA1B-7A9C-6910-A4F3-BC2C983D4C8E">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:10:47 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1500</dataTypeSize>
+<ownDataTypeParameters>1500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID договора" id="BAEE6357-0BF0-34DC-BA0D-B962963B1015">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:43:51 UTC</createdTime>
+<generatorID>5C89C334-CEE2-FB84-B9E0-CC7A8A27A3FB</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B80D8972-7B74-6A5E-2BF8-5F73A3660E84</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7537CB35-5EAB-AF5F-21B2-669DAEBED884" name="Услуги PK">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:10:59 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>127C7250-784A-30BF-F738-AB40B118C7FA</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="26BC87AD-3918-6524-7CA7-9DE8588D3CD8" name="Название услуги">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 14:41:45 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="false"/>
+</engineerTo>
+<newElementsIDs>7A1B7FA2-7FD4-D9FC-CD54-78BFFEF8C3BD</newElementsIDs>
+<usedAttributes>
+<attributeRef>7A1B7FA2-7FD4-D9FC-CD54-78BFFEF8C3BD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

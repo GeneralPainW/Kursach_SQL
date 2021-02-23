@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0F7380FA-313E-7184-984A-907118D283BA" name="Страховки">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>D755BF33-C495-46B6-B2C7-2688E85DB9CB</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_страховки" id="4EAEB335-DA90-A4AB-795D-F37D904F9202">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>28639181-C67A-A218-5FBB-3B26F4D84BB7</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Тип_страховки" id="CB347B7F-04D1-DC1C-5990-CD98FB4ED9E9">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>5A767D32-D803-59FF-EB09-AC8EA52A17B6</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Договора_ID_договора" id="1B430504-B6B7-7D7C-3D0F-0A68A839F121">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:53:26 UTC</createdTime>
+<generatorID>F1F97DD7-44CC-817B-3C29-7F6606A30FC2</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0D27FCE7-1588-681C-DDA3-CA2714D462C9" referredColumn="F61596C0-6485-7D57-51C9-26FC06987391"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EBBA1817-0EF0-BBF4-9E4E-85A28C1772E2" name="Страховки_PK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>BC7107B1-9A8E-ED88-A32B-82E5B17AC865</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EAEB335-DA90-A4AB-795D-F37D904F9202"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B59BCBA3-E221-02E6-B8F0-7AD219332DEC" name="Страховки_Договора_FK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:53:26 UTC</createdTime>
+<generatorID>791F65BD-6008-7AD1-9F18-780ED278AE4A</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B430504-B6B7-7D7C-3D0F-0A68A839F121"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

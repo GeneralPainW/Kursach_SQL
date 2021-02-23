@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CECDE861-78B7-8FF3-AE9E-F2272F64C426" containerWithKeyObject="AA2F5F47-B1C6-B075-6292-82EF1420CB75" localFKIndex="687A736D-0B7A-EBC5-FA82-8E9E4F836323" name="Агенства_Туроператоры_FK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>15E1D8F0-9455-F30C-EBEA-6ED83705C9C2</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<referredTableLongName>Туроператоры</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>11C37519-FA60-2572-27B1-602A3F04FE04</referredTableID>
+<keyObject>08731C78-3E07-EF3D-BEC3-005B2ED1D9E5</keyObject>
+<referredKeyID>08731C78-3E07-EF3D-BEC3-005B2ED1D9E5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_туроператора</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

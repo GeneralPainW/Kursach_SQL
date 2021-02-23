@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D755BF33-C495-46B6-B2C7-2688E85DB9CB" name="Страховки">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 15:41:30 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID страховки" id="28639181-C67A-A218-5FBB-3B26F4D84BB7">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 15:41:35 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Тип страховки" id="5A767D32-D803-59FF-EB09-AC8EA52A17B6">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 15:41:51 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID договора" id="F1F97DD7-44CC-817B-3C29-7F6606A30FC2">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:53:16 UTC</createdTime>
+<generatorID>791F65BD-6008-7AD1-9F18-780ED278AE4A</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<referedAttribute>B80D8972-7B74-6A5E-2BF8-5F73A3660E84</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BC7107B1-9A8E-ED88-A32B-82E5B17AC865" name="Страховка PK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 15:42:14 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>28639181-C67A-A218-5FBB-3B26F4D84BB7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

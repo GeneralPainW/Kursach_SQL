@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="34D7F3C3-80B9-662A-D3A0-B10ECA4E0A4E" name="Направления">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 12:55:25 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID направления" id="38C4555E-F037-E2F8-D675-89EA85AAAA89">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:13:23 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Название направления" id="CC7677B4-BEC8-43FC-05D2-878B98621EE0">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:13:31 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5361738D-705D-3697-A8F9-C6ABE683C779" name="Направление PK">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 13:13:30 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>38C4555E-F037-E2F8-D675-89EA85AAAA89</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="B07BEE5D-4C89-67B1-A346-95164DB95B2D" name="Название направления">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 14:41:18 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="false"/>
+</engineerTo>
+<newElementsIDs>CC7677B4-BEC8-43FC-05D2-878B98621EE0</newElementsIDs>
+<usedAttributes>
+<attributeRef>CC7677B4-BEC8-43FC-05D2-878B98621EE0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8E2DDD09-B1C4-A1A3-A090-A914CD5A82E4" name="Клиенты">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>7699125F-9034-E524-7D44-6B8748F2B566</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_клиента" id="7C0779D2-2768-6343-4E66-7210F4999268">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>1A654300-E99A-2D99-A4BA-C272C73AE09F</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ФИО" id="70BAFC7C-68B9-1A44-0DE7-D714B42A88B6">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>F429C8EF-E329-65F2-D589-2A3AE64E527B</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Дата_рождения" id="9555F877-70F9-1F10-9023-007DE6CE618C">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>64ECC863-32B8-23A2-E2AB-702F1C8B2FC1</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Паспортные_данные" id="ECEDFEB2-A2DB-87A7-E5BB-9DBB2B752D0A">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>5F638059-E620-D3B8-BC53-84687977223C</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Почта" id="02BEDB17-7C7A-7938-C248-9D11E3AA9B0B">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>FEC1FB0C-98EA-381B-4A81-3D674444C9F6</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Телефон" id="90DB980B-B021-E4BB-EE1C-20528EBC8291">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>42CEC7E2-BD73-5E04-82EE-FAD994D5272B</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Скидка" id="38515F7E-C711-49B3-8625-C7A05D45E458">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>8A22D68B-840E-E82F-1CAC-3F62B94B426F</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Заказчик" id="8CF87F97-6F31-FD8F-D522-95D1172A3BFA">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-27 13:11:41 UTC</createdTime>
+<generatorID>69DC5414-44C8-61AB-8FFC-9107AA74E82C</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="75746D8C-9A2D-708F-CE4B-80BEC6DBF28B" name="Клиенты_PK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>726E34C4-6ADE-D9E9-9D55-547EC5A33347</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C0779D2-2768-6343-4E66-7210F4999268"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="87B63AF6-1F63-8332-C996-B4294DB92F92" name="Клиенты_Паспортные_данные_UN">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>1183F6B0-0162-C060-7EF3-1648DEEC7076</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ECEDFEB2-A2DB-87A7-E5BB-9DBB2B752D0A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B6DC0E2-3AA3-40A9-E68A-66176A28CDAC" name="Клиенты_Почта_UN">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>EE8380A8-882A-6F02-1EE2-570B504E8FB5</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02BEDB17-7C7A-7938-C248-9D11E3AA9B0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

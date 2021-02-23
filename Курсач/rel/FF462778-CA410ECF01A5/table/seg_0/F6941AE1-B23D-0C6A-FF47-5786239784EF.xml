@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F6941AE1-B23D-0C6A-FF47-5786239784EF" name="Направления">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>34D7F3C3-80B9-662A-D3A0-B10ECA4E0A4E</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_направления" id="36BA8EBC-0A0F-B4D6-3542-975DEC203AB1">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>38C4555E-F037-E2F8-D675-89EA85AAAA89</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Название_направления" id="E1F9262C-1865-3A1D-41FB-88E40B0DC0A0">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>CC7677B4-BEC8-43FC-05D2-878B98621EE0</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="93527F2F-763D-4960-3766-148127310202" name="Направления_PK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>5361738D-705D-3697-A8F9-C6ABE683C779</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36BA8EBC-0A0F-B4D6-3542-975DEC203AB1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF1DFF21-D2BE-6D9E-30F8-9533F0F2F6E9" name="Направления_Название_направления_UN">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>B07BEE5D-4C89-67B1-A346-95164DB95B2D</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1F9262C-1865-3A1D-41FB-88E40B0DC0A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

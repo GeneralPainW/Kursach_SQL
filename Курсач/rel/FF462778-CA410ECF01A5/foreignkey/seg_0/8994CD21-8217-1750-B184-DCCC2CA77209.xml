@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8994CD21-8217-1750-B184-DCCC2CA77209" containerWithKeyObject="87CFBD11-9972-41EE-7E21-05D14239CD20" localFKIndex="BDBE457C-7DD0-75FD-5906-3E86B9610902" name="Гостиницы_Направления_FK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>8688E96D-FC9C-476C-EA9B-B0955BD4A58F</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<referredTableLongName>Направления</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F6941AE1-B23D-0C6A-FF47-5786239784EF</referredTableID>
+<keyObject>93527F2F-763D-4960-3766-148127310202</keyObject>
+<referredKeyID>93527F2F-763D-4960-3766-148127310202</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_направления</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

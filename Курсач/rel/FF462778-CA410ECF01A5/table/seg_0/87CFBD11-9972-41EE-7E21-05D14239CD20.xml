@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87CFBD11-9972-41EE-7E21-05D14239CD20" name="Гостиницы">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>E34BF76A-4377-7AE1-F8C6-19C1890CA1FF</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_гостиницы" id="B99DB937-ED53-5801-02B3-CE1246FA5CA5">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>BAE04356-83EF-F2E8-83E0-9D2003A7DCD4</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Название_гостиницы" id="1254A216-3028-6F2F-E998-5AA01AE031DC">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>E871691D-C7C2-830E-6F4D-816C02753121</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Рейтинг" id="D5916522-3A9C-F5F2-E62F-59275B0450B2">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>046AF247-094B-DF36-6916-FE00C3109C9B</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Кол-во_свободных_номеров" id="7ED91200-772E-DE21-DD9E-F64C770C899C">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>4BD6B9F4-A8F7-9799-FED1-7F39F1266522</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Направления_ID_направления" id="1B19058F-9231-7380-52C9-007895C81742">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>DB9F10E9-532A-F4A1-7081-2F986169DB5F</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8994CD21-8217-1750-B184-DCCC2CA77209" referredColumn="36BA8EBC-0A0F-B4D6-3542-975DEC203AB1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EF8F4F42-341C-E1A6-ADC6-8B084DD3E12A" name="Гостиницы_PK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>03DB5D23-BD42-E40A-22A9-7EC1393D23E9</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B99DB937-ED53-5801-02B3-CE1246FA5CA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C4057FB-AF83-6D76-42B7-1C1C37456FD2" name="Гостиницы_Название_гостиницы_UN">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>D988085B-14BC-87DF-7FDA-73EB5074B029</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1254A216-3028-6F2F-E998-5AA01AE031DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BDBE457C-7DD0-75FD-5906-3E86B9610902" name="Гостиницы_Направления_FK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>8688E96D-FC9C-476C-EA9B-B0955BD4A58F</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B19058F-9231-7380-52C9-007895C81742"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

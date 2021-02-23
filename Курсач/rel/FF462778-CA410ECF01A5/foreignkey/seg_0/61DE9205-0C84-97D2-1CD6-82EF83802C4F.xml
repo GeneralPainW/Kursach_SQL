@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="61DE9205-0C84-97D2-1CD6-82EF83802C4F" containerWithKeyObject="34269110-47E8-684C-8389-C15CFD2DA6E0" localFKIndex="2E364CCF-D92B-55EE-5650-04CDA24CCA71" name="Услуги_Договора_FK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>5C89C334-CEE2-FB84-B9E0-CC7A8A27A3FB</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<referredTableLongName>Договора</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B8E88576-1684-DB48-8808-42E0F5BC138E</referredTableID>
+<keyObject>01C3FA84-9CE9-8D7B-5192-A18FE9C45EDE</keyObject>
+<referredKeyID>01C3FA84-9CE9-8D7B-5192-A18FE9C45EDE</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_договора</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

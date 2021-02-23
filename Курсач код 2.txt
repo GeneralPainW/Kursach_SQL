@@ -1,0 +1,195 @@
+CREATE TABLE `INSURANCE POLICIES` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Description` VARCHAR(1000) NOT NULL,
+  PRIMARY KEY (`id`));
+
+CREATE TABLE `TOUR OPERATORS` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Website` VARCHAR(1000) NOT NULL,
+  `Phone number` VARCHAR(50) NOT NULL,
+  `E-mail` VARCHAR(100) NOT NULL,
+  `Address` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`id`));
+
+CREATE TABLE `AGENCY` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Full name` VARCHAR(150) NOT NULL,
+  `Birthday` DATE NOT NULL,
+  `Passport details` VARCHAR(200) NOT NULL,
+  `Phone number` VARCHAR(45) NOT NULL,
+  `Comission` INT NOT NULL,
+  `Hire date` DATE NOT NULL,
+  `Dismissal date` DATE NULL,
+  PRIMARY KEY (`id`);
+
+CREATE TABLE `CONTRACTS` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Departure date` DATE NOT NULL,
+  `Arrival date` DATE NOT NULL,
+  `Price` DOUBLE NOT NULL,
+  `Insurance id` INT NOT NULL,
+  `Agent id` INT NOT NULL,
+  PRIMARY KEY (`id`),
+    CONSTRAINT `C_Insurace_ID_FK`
+    FOREIGN KEY (`Insurance id`)
+    REFERENCES `INSURANCE POLICIES` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `C_Agent_ID_FK`
+    FOREIGN KEY (`Agent id`)
+    REFERENCES `AGENCY` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+CREATE TABLE `CLIENTS` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Full name` VARCHAR(150) NOT NULL,
+  `Birthday` DATE NOT NULL,
+  `Passport details` VARCHAR(200) NOT NULL,
+  `E-mail` VARCHAR(100) NOT NULL,
+  `Phone number` VARCHAR(45) NOT NULL,
+  `Discount` INT NULL,
+  `Personal agent id` INT NULL,
+  PRIMARY KEY (`id`),
+    CONSTRAINT `C_Personal_agent_ID_FK`
+    FOREIGN KEY (`Personal agent id`)
+    REFERENCES `AGENCY` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+CREATE TABLE `DIRECTIONS` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Destination name` VARCHAR(120) NOT NULL,
+  PRIMARY KEY (`id`));
+
+CREATE TABLE `SERVICES` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Title` VARCHAR(200) NOT NULL,
+  `Price` DOUBLE NOT NULL,
+  `Description` VARCHAR(1000) NULL,
+  PRIMARY KEY (`id`));
+  
+CREATE TABLE `HOTELS` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Hotel name` VARCHAR(120) NOT NULL,
+  `Hotel rating` VARCHAR(45) NOT NULL,
+  `Number of available rooms` INT NOT NULL,
+  `Direction` INT NOT NULL,
+  PRIMARY KEY (`id`),
+    CONSTRAINT `Direction_ID_FK`
+    FOREIGN KEY (`Direction`)
+    REFERENCES `DIRECTIONS` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+CREATE TABLE `ROOM TYPES` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Comfort level` VARCHAR(120) NOT NULL,
+  `Max number of guests` INT NOT NULL,
+  PRIMARY KEY (`id`));
+
+CREATE TABLE `PAYMENTS` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `Status` VARCHAR(45) NOT NULL,
+  `Contract id` INT NOT NULL,
+  `Payment amount` DOUBLE NOT NULL,
+  PRIMARY KEY (`id`),
+    CONSTRAINT `P_Contract_ID_FK`
+    FOREIGN KEY (`Contract id`)
+    REFERENCES `CONTRACTS` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+CREATE TABLE `TOUR OPERATORS - HOTELS` (
+  `Tour operator id` INT NOT NULL,
+  `Hotel id` INT NOT NULL,
+  PRIMARY KEY (`Tour operator id`, `Hotel id`),
+    CONSTRAINT `Hotel_(tour_operator)_ID_FK`
+    FOREIGN KEY (`Hotel id`)
+    REFERENCES `HOTELS` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `Tour_operator_ID_FK`
+    FOREIGN KEY (`Tour operator id`)
+    REFERENCES `TOUR OPERATORS` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+CREATE TABLE `HOTELS - ROOM TYPES` (
+  `Room id` INT NOT NULL AUTO_INCREMENT,
+  `Hotel id` INT NOT NULL,
+  `Room type id` INT NOT NULL,
+  `Status` VARCHAR(45) NOT NULL,
+  `Price per night` DOUBLE NOT NULL,
+  PRIMARY KEY (`Room id`, `Hotel id`),
+    CONSTRAINT `Hotel_ID_FK`
+    FOREIGN KEY (`Hotel id`)
+    REFERENCES `HOTELS` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE NO ACTION,
+  CONSTRAINT `Room_type_ID_FK`
+    FOREIGN KEY (`Room type id`)
+    REFERENCES `ROOM TYPES` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE NO ACTION);
+
+CREATE TABLE `CONTRACTS - SERVICES` (
+  `Contract id` INT NOT NULL,
+  `Services id` INT NOT NULL,
+  PRIMARY KEY (`Contract id`, `Services id`),
+    CONSTRAINT `CS_Contract_ID_FK`
+    FOREIGN KEY (`Contract id`)
+    REFERENCES `CONTRACTS` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE NO ACTION,
+  CONSTRAINT `CS_Services_ID_FK`
+    FOREIGN KEY (`Services id`)
+    REFERENCES `SERVICES` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE NO ACTION);
+
+CREATE TABLE `CONTRACRS - CLIENTS` (
+  `Contract id` INT NOT NULL,
+  `Client id` INT NOT NULL,
+  `Customer` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`Contract id`, `Client id`),
+    CONSTRAINT `CC_Contract_ID_FK`
+    FOREIGN KEY (`Contract id`)
+    REFERENCES `CONTRACTS` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `CC_Client_ID_FK`
+    FOREIGN KEY (`Client id`)
+    REFERENCES `CLIENTS` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+CREATE TABLE `AGENCY - TOUR OPERATOR` (
+  `Agent id` INT NOT NULL,
+  `Tour operator id` INT NOT NULL,
+  PRIMARY KEY (`Agent id`, `Tour operator id`),
+  CONSTRAINT `ATO_Agency_ID_FK`
+    FOREIGN KEY (`Agent id`)
+    REFERENCES `AGENCY` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `ATO_Tour_Operator_ID_FK`
+    FOREIGN KEY (`Tour operator id`)
+    REFERENCES `TOUR OPERATORS` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+CREATE TABLE `CONTRACTS - HOTEL - ROOM` (
+  `Contract id` INT NOT NULL,
+  `Room id` INT NOT NULL,
+  PRIMARY KEY (`Contract id`, `Room id`),
+  CONSTRAINT `CHR_Contract_ID_FK`
+    FOREIGN KEY (`Contract id`)
+    REFERENCES `CONTRACTS` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `CHR_Room_ID_FK`
+    FOREIGN KEY (`Room id`)
+    REFERENCES `HOTELS - ROOM TYPES` (`Room id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);

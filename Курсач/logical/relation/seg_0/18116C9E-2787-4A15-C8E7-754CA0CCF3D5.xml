@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Клиент-договор" directorySegmentName="seg_0" id="18116C9E-2787-4A15-C8E7-754CA0CCF3D5">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 10:14:34 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<sourcePk>726E34C4-6ADE-D9E9-9D55-547EC5A33347</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7699125F-9034-E524-7D44-6B8748F2B566</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6CC89FD8-DA53-D712-C3D2-FD0881534E8D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

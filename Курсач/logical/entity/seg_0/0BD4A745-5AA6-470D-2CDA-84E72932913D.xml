@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0BD4A745-5AA6-470D-2CDA-84E72932913D" name="Платежи">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 15:42:27 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID платежа" id="FCB086BE-F348-29D9-31F8-0B63A0E19349">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 15:42:32 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Статус платежа" id="A0F3B01B-B3D5-74E2-FC93-D2F14E42F98D">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 15:42:40 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID договора" id="33D3DC78-508F-8C76-18E6-EEBC7D5B0F21">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 10:10:44 UTC</createdTime>
+<generatorID>430ACE1F-A8CA-680A-BDBD-68598F9654B0</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<referedAttribute>B80D8972-7B74-6A5E-2BF8-5F73A3660E84</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B0CD0C6F-14DD-89DC-E1E8-DDB647C33BC7" name="Платежи PK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-03 15:43:10 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>FCB086BE-F348-29D9-31F8-0B63A0E19349</newElementsIDs>
+<usedAttributes>
+<attributeRef>FCB086BE-F348-29D9-31F8-0B63A0E19349</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EB94A9AD-DCA0-2BC9-FA54-38DF723F10B1" name="Туроператор-гостиница">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Гостиницы_ID_гостиницы" id="613BBA18-4154-3CA5-87D4-8E3A96BCB0E9">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FCB11D83-562C-BBD0-DA17-30F394657A63" referredColumn="B99DB937-ED53-5801-02B3-CE1246FA5CA5"/>
+</associations>
+</Column>
+<Column name="Туроператоры_ID_туроператора" id="7A7A4926-F1E1-33C8-516A-EDAC2E6CF675">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6B9DB50A-3077-8B93-4BA3-CFA3F1951180" referredColumn="C764E547-F555-F25E-EDDC-E1ABDA089438"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B2149FC0-412B-4642-5EAA-A8CC8C2023FB" name="Туроператор-гостиница_PK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="613BBA18-4154-3CA5-87D4-8E3A96BCB0E9"/>
+<colUsage columnID="7A7A4926-F1E1-33C8-516A-EDAC2E6CF675"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54EEF9D3-2656-B1C4-BD86-AD5A89D3A078" name="Туроператор-гостиница_Гостиницы_FK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>52C925A6-0521-E11D-EDC8-1EA3660C010F</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="613BBA18-4154-3CA5-87D4-8E3A96BCB0E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D752477-9CD5-9C76-A3F1-A9EABC02CBE6" name="Туроператор-гостиница_Туроператоры_FK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>52C925A6-0521-E11D-EDC8-1EA3660C010F</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A7A4926-F1E1-33C8-516A-EDAC2E6CF675"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

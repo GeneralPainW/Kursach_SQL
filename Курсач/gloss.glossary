@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<cwd_glossary name="Курсач" description="generated from logical model of design Курсач" id="5922C76E-9B98-FAA8-7FC5-7AC866823199" incomplete_modifiers="true" >
+
+   <glossaryWord name="%" plural="%" abbreviation="" alt_abbreviation="" id="1941C9A7-15D5-59D9-2CAC-88F9AF729B16" import_id="" description="" />
+   <glossaryWord name="ID_платежа" plural="Payment ID" abbreviation="" alt_abbreviation="" id="65E005E0-3920-485A-A7A7-EB7943AA76DE" import_id="" description="" />
+   <glossaryWord name="ID_номера" plural="Room ID" abbreviation="" alt_abbreviation="" id="31CC01B4-2416-9CF2-96AF-95BC8DB57556" import_id="" description="" />
+   <glossaryWord name="Агенства" plural="AGENCY" abbreviation="" alt_abbreviation="" id="CD7C9366-51BA-880A-5B86-74099797D0C5" import_id="" description="" />
+   <glossaryWord name="Адрес" plural="Address" abbreviation="" alt_abbreviation="" id="A901A6F2-FB4C-4127-0393-FA6A5C0B6463" import_id="" description="" />
+   <glossaryWord name="Гостиницы" plural="HOTELS" abbreviation="" alt_abbreviation="" id="99EEF7FA-3F10-C967-B642-0D0FD58295A7" import_id="" description="" />
+   <glossaryWord name="Дата_прилета" plural="Arrival date" abbreviation="" alt_abbreviation="" id="E0E746C5-4E96-5508-6219-E687495F84BA" import_id="" description="" />
+   <glossaryWord name="Договора" plural="CONTRACTS" abbreviation="" alt_abbreviation="" id="CB5BD21F-47F7-43EC-376E-4DF12AC55B5D" import_id="" description="" />
+   <glossaryWord name="ID_договора" plural="Contract ID" abbreviation="" alt_abbreviation="" id="99FA9395-873C-C909-9BC3-AE11C3EBE183" import_id="" description="" />
+   <glossaryWord name="Клиенты" plural="CLIENTS" abbreviation="" alt_abbreviation="" id="DA257B51-C1CE-8B4A-7305-5CBB57A4C670" import_id="" description="" />
+   <glossaryWord name="Макс._кол-во_постояльцев_в_номере" plural="Max quantity guest in room" abbreviation="" alt_abbreviation="" id="5B61D781-9958-8EF3-911E-D9F9C73D3031" import_id="" description="" />
+   <glossaryWord name="Название_направления" plural="Title direction" abbreviation="" alt_abbreviation="" id="57606055-9967-DC70-C993-3D2EA570C887" import_id="" description="" />
+   <glossaryWord name="ID_направления" plural="Direction ID" abbreviation="" alt_abbreviation="" id="1E1A4ABD-40BE-C8B3-22B9-493C5D5A4F80" import_id="" description="" />
+   <glossaryWord name="Направления" plural="DIRECTIONS" abbreviation="" alt_abbreviation="" id="79061EA3-5308-2A58-3505-348FD9CB9937" import_id="" description="" />
+   <glossaryWord name="Платежи" plural="PAYMENTS" abbreviation="" alt_abbreviation="" id="108E8F09-9BA7-B0E2-9304-1495DCA6E16A" import_id="" description="" />
+   <glossaryWord name="Почта" plural="E-mail" abbreviation="" alt_abbreviation="" id="CA34C5FB-123A-C5BB-720A-9A4F8A033496" import_id="" description="" />
+   <glossaryWord name="Рейтинг" plural="Rating" abbreviation="" alt_abbreviation="" id="1F0C5C64-BFD9-56F9-500E-52DC90ABC419" import_id="" description="" />
+   <glossaryWord name="Сайт" plural="Website" abbreviation="" alt_abbreviation="" id="D390F6B5-A081-F448-338B-D0391A688321" import_id="" description="" />
+   <glossaryWord name="Скидка" plural="Discount" abbreviation="" alt_abbreviation="" id="9D7F4B8C-994D-1662-9960-B78DD2E58388" import_id="" description="" />
+   <glossaryWord name="Статус_платежа" plural="Payment status" abbreviation="" alt_abbreviation="" id="153D3307-280F-2EF6-10D5-97083E591860" import_id="" description="" />
+   <glossaryWord name="ID_страховки" plural="Insurance ID" abbreviation="" alt_abbreviation="" id="FB50F956-9B1B-C3CE-861B-386C8F8AD65C" import_id="" description="" />
+   <glossaryWord name="Страховки" plural="INSURANCE POLICIES" abbreviation="" alt_abbreviation="" id="63872AD7-6D9D-2467-7CFE-84D015E1978B" import_id="" description="" />
+   <glossaryWord name="Телефон" plural="Phone" abbreviation="" alt_abbreviation="" id="F05BA4A8-5901-6AE2-0802-9B78E8F63C0A" import_id="" description="" />
+   <glossaryWord name="Типы" plural="TYPES" abbreviation="" alt_abbreviation="" id="CE89ED84-D798-78C1-786B-F76BE4C47ED6" import_id="" description="" />
+   <glossaryWord name="Туроператоры" plural="TOUR OPERATORS" abbreviation="" alt_abbreviation="" id="426D95C0-AB4A-C5CB-95C5-10313835D688" import_id="" description="" />
+   <glossaryWord name="ФИО" plural="Full name" abbreviation="" alt_abbreviation="" id="E895A993-7C3F-88A7-26AA-912EC4B0847E" import_id="" description="" />
+   <glossaryWord name="Цена_услуги" plural="Services price" abbreviation="" alt_abbreviation="" id="01B1DE5D-C365-034A-49D3-BC67FDB2172B" import_id="" description="" />
+   <glossaryWord name="ID_агента" plural="Agent ID" abbreviation="" alt_abbreviation="" id="9CC9B374-8E3A-162A-7968-20D83D03CB27" import_id="" description="" />
+   <glossaryWord name="Дата_вылета" plural="Departure date" abbreviation="" alt_abbreviation="" id="A9127C7D-6595-C1A9-4566-B92ADB160E9D" import_id="" description="" />
+   <glossaryWord name="Паспортные_данные" plural="Passport data" abbreviation="" alt_abbreviation="" id="8B17179E-5F31-36C0-7BF9-F490287F763D" import_id="" description="" />
+   <glossaryWord name="ID_клиента" plural="Clients ID" abbreviation="" alt_abbreviation="" id="96BD7715-F01E-2032-A0F5-B3831E849CEA" import_id="" description="" />
+   <glossaryWord name="%_комисси_со_сделки" plural="Commissions" abbreviation="" alt_abbreviation="" id="370F25FA-D2E9-EE80-4ED2-4A532545967A" import_id="" description="" />
+   <glossaryWord name="Дата_найма" plural="Hire date" abbreviation="" alt_abbreviation="" id="FFAD3651-7896-27C3-E92B-86B63AF2272F" import_id="" description="" />
+   <glossaryWord name="Уровень_комфорта_номера" plural="Comfort level in rooms" abbreviation="" alt_abbreviation="" id="3B07B77A-B16D-E49C-BC3B-B9819E896231" import_id="" description="" />
+   <glossaryWord name="Кол-во_свободных_номеров" plural="Quantity free rooms" abbreviation="" alt_abbreviation="" id="91F4FE4D-5EA1-F5AF-60F1-5B049523BD5A" import_id="" description="" />
+   <glossaryWord name="Типы_номеров" plural="TYPE ROOMS" abbreviation="" alt_abbreviation="" id="97D82A0F-FFD2-ECA2-4220-45B6056F132D" import_id="" description="" />
+   <glossaryWord name="Цена_за_ночь" plural="Price per night" abbreviation="" alt_abbreviation="" id="7D55F0BF-9076-808F-4FD5-335535EF36B4" import_id="" description="" />
+   <glossaryWord name="Описание_услуги" plural="Services description" abbreviation="" alt_abbreviation="" id="B069AD2C-0A7A-319B-DB1D-11AFF4D5071C" import_id="" description="" />
+   <glossaryWord name="Тип_страховки" plural="Insurance type" abbreviation="" alt_abbreviation="" id="97CF306B-1169-713D-20FC-997A12C3881E" import_id="" description="" />
+   <glossaryWord name="Заказчик" plural="Customer" abbreviation="" alt_abbreviation="" id="D22A1A37-3E8D-C818-8DF1-3F22C6D23DD1" import_id="" description="" />
+   <glossaryWord name="Дата_увольнения" plural="Layoffs date" abbreviation="" alt_abbreviation="" id="5C0120A5-2449-E7A1-E069-8B2AA9CE42DA" import_id="" description="" />
+   <glossaryWord name="ID_услуги" plural="Services ID" abbreviation="" alt_abbreviation="" id="43B6EBAB-53F7-99D2-23CE-CA201FB8BB26" import_id="" description="" />
+   <glossaryWord name="ФИО_агента" plural="Agent full name" abbreviation="" alt_abbreviation="" id="684BC3F5-B2DC-3A70-080F-1D140D377DB7" import_id="" description="" />
+
+</cwd_glossary>

@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B8E88576-1684-DB48-8808-42E0F5BC138E" name="Договора">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>6CC89FD8-DA53-D712-C3D2-FD0881534E8D</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_договора" id="F61596C0-6485-7D57-51C9-26FC06987391">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>B80D8972-7B74-6A5E-2BF8-5F73A3660E84</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Дата_вылета" id="0D1A0872-E499-9667-A9DF-D8A441460591">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>1797231C-1D82-C2B1-8D95-279FEA31A2F8</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Дата_прилета" id="6EC17C12-6D67-4A8F-A84E-23BCAE9A4E1C">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>383BCE95-F167-6943-87BC-702F37CC40E8</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Агенства_ID_агента" id="20D17A09-AE93-9155-45A4-9A9F73DEBD4E">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>04C6C340-812C-50D0-42FB-69D958D36381</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FC1CBD33-DA1B-B412-769C-9CAF4718CCE7" referredColumn="FE723370-37E3-865E-7878-C9A730A4F104"/>
+</associations>
+</Column>
+<Column name="Платежи_ID_платежа" id="6B1D38FF-8F23-3B9A-BA7A-5D026AAFA977">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 10:13:00 UTC</createdTime>
+<generatorID>885D793C-024C-00D2-F36F-628A356D7DEC</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Клиенты_ID_клиента" id="5D251BED-D9C7-FCC7-140A-FC9FDBB3B348">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 10:15:07 UTC</createdTime>
+<generatorID>34BBF939-A898-60FF-1829-8E4FE9A4FD2D</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6DCC78DA-9271-3E6D-BFA7-F1E899928D69" referredColumn="7C0779D2-2768-6343-4E66-7210F4999268"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="01C3FA84-9CE9-8D7B-5192-A18FE9C45EDE" name="Договора_PK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>195AC350-A12D-7E6C-EECE-CBEF5B350539</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F61596C0-6485-7D57-51C9-26FC06987391"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B64DE09-98C7-9494-B20D-946843AA9667" name="Договора__IDX">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:54:40 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>022C3005-824D-BD79-8A80-FA0BD14C8E85</relationGeneratorID>
+</ind_PK_UK>
+<ind_PK_UK id="A29D8C78-55F9-8BB5-D277-F886D23AF23D" name="Договора__IDXv1">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 10:13:00 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>430ACE1F-A8CA-680A-BDBD-68598F9654B0</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="6B1D38FF-8F23-3B9A-BA7A-5D026AAFA977"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C0BD254-B952-2700-1504-9BB9651146DC" name="Договора_Агенства_FK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:50:26 UTC</createdTime>
+<generatorID>CAC0DBC3-4EA4-7EAE-C2D2-52586FF2773F</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20D17A09-AE93-9155-45A4-9A9F73DEBD4E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3CC7FA85-7913-79BE-E4EA-C3572E7DC706" name="Договора_Клиенты_FK">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 10:15:07 UTC</createdTime>
+<generatorID>18116C9E-2787-4A15-C8E7-754CA0CCF3D5</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D251BED-D9C7-FCC7-140A-FC9FDBB3B348"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

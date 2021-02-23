@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6CC89FD8-DA53-D712-C3D2-FD0881534E8D" name="Договора">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 12:54:11 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID договора" id="B80D8972-7B74-6A5E-2BF8-5F73A3660E84">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 12:57:31 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Дата вылета" id="1797231C-1D82-C2B1-8D95-279FEA31A2F8">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 12:59:33 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Дата прилета" id="383BCE95-F167-6943-87BC-702F37CC40E8">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 12:59:40 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID агента" id="04C6C340-812C-50D0-42FB-69D958D36381">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 09:43:04 UTC</createdTime>
+<generatorID>CAC0DBC3-4EA4-7EAE-C2D2-52586FF2773F</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<referedAttribute>54968F29-F1CD-2A13-5661-87EA52F89B0A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID клиента" id="34BBF939-A898-60FF-1829-8E4FE9A4FD2D">
+<createdBy>Саня-ПК</createdBy>
+<createdTime>2021-01-06 10:14:34 UTC</createdTime>
+<generatorID>18116C9E-2787-4A15-C8E7-754CA0CCF3D5</generatorID>
+<ownerDesignName>Курсач</ownerDesignName>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="true"/>
+</engineerTo>
+<referedAttribute>1A654300-E99A-2D99-A4BA-C272C73AE09F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="195AC350-A12D-7E6C-EECE-CBEF5B350539" name="Договор PK">
+<createdBy>Ulyana</createdBy>
+<createdTime>2020-12-28 12:58:34 UTC</createdTime>
+<ownerDesignName>Курсач</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FF462778-1DF7-A82B-AB18-CA410ECF01A5" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B80D8972-7B74-6A5E-2BF8-5F73A3660E84</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

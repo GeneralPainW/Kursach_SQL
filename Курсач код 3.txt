@@ -1,0 +1,119 @@
+INSERT INTO `directions` (`Destination name`) VALUES ('Сочи');
+INSERT INTO `directions` (`Destination name`) VALUES ('Краснодар');
+INSERT INTO `directions` (`Destination name`) VALUES ('Москва');
+INSERT INTO `directions` (`Destination name`) VALUES ('Вена');
+INSERT INTO `directions` (`Destination name`) VALUES ('Рим');
+INSERT INTO `directions` (`Destination name`) VALUES ('Венеция');
+INSERT INTO `directions` (`Destination name`) VALUES ('Берлин');
+INSERT INTO `directions` (`Destination name`) VALUES ('Мадрид');
+
+INSERT INTO `hotels` (`Hotel name`, `Hotel rating`, `Number of available rooms`, `Direction`) VALUES ('Отель 1', '4', '4', '1');
+INSERT INTO `hotels` (`Hotel name`, `Hotel rating`, `Number of available rooms`, `Direction`) VALUES ('Отель 2', '5', '12', '1');
+INSERT INTO `hotels` (`Hotel name`, `Hotel rating`, `Number of available rooms`, `Direction`) VALUES ('Отель 3', '2', '7', '4');
+INSERT INTO `hotels` (`Hotel name`, `Hotel rating`, `Number of available rooms`, `Direction`) VALUES ('Отель 4', '3', '2', '5');
+INSERT INTO `hotels` (`Hotel name`, `Hotel rating`, `Number of available rooms`, `Direction`) VALUES ('Отель 5', '5', '1', '3');
+
+INSERT INTO `room types` (`Comfort level`, `Max number of guests`) VALUES ('5', '10');
+INSERT INTO `room types` (`Comfort level`, `Max number of guests`) VALUES ('4', '4');
+INSERT INTO `room types` (`Comfort level`, `Max number of guests`) VALUES ('4', '2');
+INSERT INTO `room types` (`Comfort level`, `Max number of guests`) VALUES ('5', '6');
+INSERT INTO `room types` (`Comfort level`, `Max number of guests`) VALUES ('5', '4');
+INSERT INTO `room types` (`Comfort level`, `Max number of guests`) VALUES ('4', '8');
+INSERT INTO `room types` (`Comfort level`, `Max number of guests`) VALUES ('4', '1');
+INSERT INTO `room types` (`Comfort level`, `Max number of guests`) VALUES ('3', '2');
+INSERT INTO `room types` (`Comfort level`, `Max number of guests`) VALUES ('3', '3');
+INSERT INTO `room types` (`Comfort level`, `Max number of guests`) VALUES ('3', '4');
+INSERT INTO `room types` (`Comfort level`, `Max number of guests`) VALUES ('3', '1');
+INSERT INTO `room types` (`Comfort level`, `Max number of guests`) VALUES ('3', '8');
+INSERT INTO `room types` (`Comfort level`, `Max number of guests`) VALUES ('2', '10');
+INSERT INTO `room types` (`Comfort level`, `Max number of guests`) VALUES ('2', '2');
+INSERT INTO `room types` (`Comfort level`, `Max number of guests`) VALUES ('2', '1');
+
+INSERT INTO `tour operators` (`Website`, `Phone number`, `E-mail`, `Address`) VALUES ('Сайт 1', '555-55-01', 'Почта 1', 'Адрес 1');
+INSERT INTO `tour operators` (`Website`, `Phone number`, `E-mail`, `Address`) VALUES ('Сайт 2', '555-55-02', 'Почта 2', 'Адрес 2');
+INSERT INTO `tour operators` (`Website`, `Phone number`, `E-mail`, `Address`) VALUES ('Сайт 3', '555-55-03', 'Почта 3', 'Адрес 3');
+INSERT INTO `tour operators` (`Website`, `Phone number`, `E-mail`, `Address`) VALUES ('Сайт 4', '555-55-04', 'Почта 4', 'Адрес 4 ');
+INSERT INTO `tour operators` (`Website`, `Phone number`, `E-mail`, `Address`) VALUES ('Сайт 5', '555-55-05', 'Почта 5', 'Адрес 5');
+
+INSERT INTO `agency` (`Full name`, `Birthday`, `Passport details`, `Phone number`, `Comission`, `Hire date`, `Dismissal date`, `Tour operator id`) VALUES ('ФИО 1', '1982-12-5', 'Паспорт 1', '100-20-01', '4', '2005-11-10', '2014-02-02', '1');
+INSERT INTO `agency` (`Full name`, `Birthday`, `Passport details`, `Phone number`, `Comission`, `Hire date`, `Tour operator id`) VALUES ('ФИО 2', '1975-02-05', 'Паспорт 2', '100-20-02', '2', '2010-05-11', '1');
+INSERT INTO `agency` (`Full name`, `Birthday`, `Passport details`, `Phone number`, `Comission`, `Hire date`, `Tour operator id`) VALUES ('ФИО 3', '1980-08-14', 'Паспорт 3', '100-20-03', '1', '2007-11-15', '4');
+INSERT INTO `agency` (`Full name`, `Birthday`, `Passport details`, `Phone number`, `Comission`, `Hire date`, `Tour operator id`) VALUES ('ФИО 4', '1990-07-15', 'Паспорт 4', '100-20-04', '0', '2014-07-15', '2');
+
+INSERT INTO `tour operators - hotels` (`Tour operator id`, `Hotel id`) VALUES ('1', '1');
+INSERT INTO `tour operators - hotels` (`Tour operator id`, `Hotel id`) VALUES ('1', '2');
+INSERT INTO `tour operators - hotels` (`Tour operator id`, `Hotel id`) VALUES ('1', '4');
+INSERT INTO `tour operators - hotels` (`Tour operator id`, `Hotel id`) VALUES ('2', '1');
+INSERT INTO `tour operators - hotels` (`Tour operator id`, `Hotel id`) VALUES ('2', '2');
+INSERT INTO `tour operators - hotels` (`Tour operator id`, `Hotel id`) VALUES ('2', '3');
+INSERT INTO `tour operators - hotels` (`Tour operator id`, `Hotel id`) VALUES ('2', '4');
+INSERT INTO `tour operators - hotels` (`Tour operator id`, `Hotel id`) VALUES ('3', '1');
+INSERT INTO `tour operators - hotels` (`Tour operator id`, `Hotel id`) VALUES ('3', '4');
+INSERT INTO `tour operators - hotels` (`Tour operator id`, `Hotel id`) VALUES ('4', '2');
+
+INSERT INTO `hotels - room types` (`Hotel id`, `Room type id`, `Status`, `Price per night`) VALUES ('1', '2', 'Свободен', '200');
+INSERT INTO `hotels - room types` (`Hotel id`, `Room type id`, `Status`, `Price per night`) VALUES ('1', '4', 'Забронирован', '150');
+INSERT INTO `hotels - room types` (`Hotel id`, `Room type id`, `Status`, `Price per night`) VALUES ('1', '5', 'Занят', '80');
+INSERT INTO `hotels - room types` (`Hotel id`, `Room type id`, `Status`, `Price per night`) VALUES ('1', '2', 'Занят', '200');
+INSERT INTO `hotels - room types` (`Hotel id`, `Room type id`, `Status`, `Price per night`) VALUES ('1', '2', 'Забронирован', '200');
+INSERT INTO `hotels - room types` (`Hotel id`, `Room type id`, `Status`, `Price per night`) VALUES ('1', '5', 'Свободен', '80');
+INSERT INTO `hotels - room types` (`Hotel id`, `Room type id`, `Status`, `Price per night`) VALUES ('1', '5', 'Забронирован', '80');
+INSERT INTO `hotels - room types` (`Hotel id`, `Room type id`, `Status`, `Price per night`) VALUES ('2', '1', 'Занят', '400');
+INSERT INTO `hotels - room types` (`Hotel id`, `Room type id`, `Status`, `Price per night`) VALUES ('2', '1', 'Свободен', '400');
+INSERT INTO `hotels - room types` (`Hotel id`, `Room type id`, `Status`, `Price per night`) VALUES ('2', '1', 'Свободен', '400');
+INSERT INTO `hotels - room types` (`Hotel id`, `Room type id`, `Status`, `Price per night`) VALUES ('2', '3', 'Занят', '180');
+INSERT INTO `hotels - room types` (`Hotel id`, `Room type id`, `Status`, `Price per night`) VALUES ('4', '8', 'Свободен', '25');
+INSERT INTO `hotels - room types` (`Hotel id`, `Room type id`, `Status`, `Price per night`) VALUES ('4', '8', 'Занят', '25');
+INSERT INTO `hotels - room types` (`Hotel id`, `Room type id`, `Status`, `Price per night`) VALUES ('4', '7', 'Свободен', '32');
+
+INSERT INTO `clients` (`Full name`, `Birthday`, `Passport details`, `E-mail`, `Phone number`, `Discount`, `Customer`, `Personal agent id`) VALUES ('ФИО 1', '1991-02-15', 'Паспорт 1', 'Почта 1', '200-20-01', '10', 'Y', '1');
+INSERT INTO `clients` (`Full name`, `Birthday`, `Passport details`, `E-mail`, `Phone number`, `Discount`, `Customer`, `Personal agent id`) VALUES ('ФИО 2', '1985-05-01', 'Паспорт 2', 'Почта 2', '200-20-02', '5', 'N', '2');
+INSERT INTO `clients` (`Full name`, `Birthday`, `Passport details`, `E-mail`, `Phone number`, `Discount`, `Customer`) VALUES ('ФИО 3', '1979-11-21', 'Паспорт 3', 'Почта 3', '200-20-03', '0', 'N');
+INSERT INTO `clients` (`Full name`, `Birthday`, `Passport details`, `E-mail`, `Phone number`, `Discount`, `Customer`) VALUES ('ФИО 4 ', '1958-02-18', 'Паспорт 4', 'Почта 4', '200-20-04', '0', 'Y');
+INSERT INTO `clients` (`Full name`, `Birthday`, `Passport details`, `E-mail`, `Phone number`, `Discount`, `Customer`, `Personal agent id`) VALUES ('ФИО 5', '1997-09-07', 'Паспорт 5', 'Почта 5', '200-20-05', '5', 'N', '3');
+
+INSERT INTO `insurance policies` (`Description`) VALUES ('Описание 1');
+INSERT INTO `insurance policies` (`Description`) VALUES ('Описание 2');
+INSERT INTO `insurance policies` (`Description`) VALUES ('Описание 3');
+INSERT INTO `insurance policies` (`Description`) VALUES ('Описание 4');
+INSERT INTO `insurance policies` (`Description`) VALUES ('Описание 5');
+INSERT INTO `insurance policies` (`Description`) VALUES ('Описание 6');
+INSERT INTO `insurance policies` (`Description`) VALUES ('Описание 7');
+
+INSERT INTO `contracts` (`Departure date`, `Arrival date`, `Insurance id`, `Agent id`) VALUES ('2018-01-14', '2018-02-05', '1', '1');
+INSERT INTO `contracts` (`Departure date`, `Arrival date`, `Insurance id`, `Agent id`) VALUES ('2017-05-15', '2017-07-15', '2', '1');
+INSERT INTO `contracts` (`Departure date`, `Arrival date`, `Insurance id`, `Agent id`) VALUES ('2017-12-10', '2017-12-15', '1', '2');
+INSERT INTO `contracts` (`Departure date`, `Arrival date`, `Insurance id`, `Agent id`) VALUES ('2019-05-02', '2019-05-12', '3', '3');
+
+INSERT INTO `contracrs - clients` (`Contract id`, `Client id`) VALUES ('1', '1');
+INSERT INTO `contracrs - clients` (`Contract id`, `Client id`) VALUES ('1', '2');
+INSERT INTO `contracrs - clients` (`Contract id`, `Client id`) VALUES ('1', '3');
+INSERT INTO `contracrs - clients` (`Contract id`, `Client id`) VALUES ('2', '1');
+INSERT INTO `contracrs - clients` (`Contract id`, `Client id`) VALUES ('2', '3');
+INSERT INTO `contracrs - clients` (`Contract id`, `Client id`) VALUES ('3', '4');
+INSERT INTO `contracrs - clients` (`Contract id`, `Client id`) VALUES ('4', '1');
+INSERT INTO `contracrs - clients` (`Contract id`, `Client id`) VALUES ('4', '4');
+
+INSERT INTO `services` (`Title`, `Price`, `Description`) VALUES ('Услуга 1', '200', 'Описание 1');
+INSERT INTO `services` (`Title`, `Price`, `Description`) VALUES ('Услуга 2', '15', 'Описание 2');
+INSERT INTO `services` (`Title`, `Price`, `Description`) VALUES ('Услуга 3', '100', 'Описание 3');
+INSERT INTO `services` (`Title`, `Price`, `Description`) VALUES ('Услуга 4', '140', 'Описание 4');
+INSERT INTO `services` (`Title`, `Price`, `Description`) VALUES ('Услуга 5', '20', 'Описание 5');
+INSERT INTO `services` (`Title`, `Price`, `Description`) VALUES ('Услуга 6', '55', 'Описание 6');
+INSERT INTO `services` (`Title`, `Price`, `Description`) VALUES ('Услуга 7', '415', 'Описание 7');
+INSERT INTO `services` (`Title`, `Price`, `Description`) VALUES ('Услуга 8', '70', 'Описание 8');
+
+INSERT INTO `contracts - services` (`Contract id`, `Services id`) VALUES ('1', '2');
+INSERT INTO `contracts - services` (`Contract id`, `Services id`) VALUES ('1', '3');
+INSERT INTO `contracts - services` (`Contract id`, `Services id`) VALUES ('2', '4');
+INSERT INTO `contracts - services` (`Contract id`, `Services id`) VALUES ('3', '1');
+INSERT INTO `contracts - services` (`Contract id`, `Services id`) VALUES ('3', '2');
+INSERT INTO `contracts - services` (`Contract id`, `Services id`) VALUES ('3', '3');
+INSERT INTO `contracts - services` (`Contract id`, `Services id`) VALUES ('3', '8');
+INSERT INTO `contracts - services` (`Contract id`, `Services id`) VALUES ('4', '5');
+INSERT INTO `contracts - services` (`Contract id`, `Services id`) VALUES ('4', '6');
+
+INSERT INTO `payments` (`Status`, `Contract id`) VALUES ('Оплачен', '1');
+INSERT INTO `payments` (`Status`, `Contract id`) VALUES ('Оплачен', '2');
+INSERT INTO `payments` (`Status`, `Contract id`) VALUES ('Ждет оплаты', '3');
+INSERT INTO `payments` (`Status`, `Contract id`) VALUES ('Оплачен', '4');
